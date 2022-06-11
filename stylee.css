@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(twitter.jpg);
+  padding: 20px;
+}
+
+::selection {
+  color: #fff;
+  background: #1da1f2;
+}
+
+.form-wrapper {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.455);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.bottom {
+  margin-top: 13px;
+}
+
+.bottom .icons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icons li {
+  list-style: none;
+  color: #1da1f2;
+  font-size: 20px;
+  margin: 0 2px;
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+
+.tweet-textarea {
+  width: 100%;
+  min-height: 65px;
+  padding: 5px;
+  max-height: 100px;
+  resize: vertical;
+  outline: none;
+}
+
+i {
+  color: #1da1f2;
+}
+
+.privacy span {
+  margin: 10px 0;
+}
+
+.sub-btn {
+  padding: 7px 20px;
+  font-size: 18px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: white;
+  background-color: #1da1f2;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.username {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  padding: 2px;
+  font-size: 12px;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 65%;
+  padding: 0 50px;
+  justify-content: space-between;
+}
+
+
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 60%;
+    row-gap: 30px;
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    padding: 0 50px;
+  }
+  
+.all-tweets {
+  min-height: 60vh ;
+}
+}
+
+.tw {
+  height: 100%;
+  background-color: rgba(0, 27, 34, 0.851);
+  padding: 40px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.form-wrapper .titleee {
+  font-size: 21px;
+  color: #1da1f2;
+}
+
+.all-tweets {
+  overflow-y: auto;
+}
+
+
+.tw h2 {
+  color: #1da1f2;
+  margin-bottom: 10px;
+}
+
+.tweet {
+  margin-bottom: 25px;
+  color: antiquewhite;
+  background-color: rgba(142, 170, 179, 0.834);
+  padding: 6px;
+  font-size: 13px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+
+.tweet div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.tweet div .deleteBut {
+  color: white;
+  background-color: rgb(175, 21, 21);
+  padding: 2px 5px;
+  font-size: 12px;
+  border: none;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  cursor: pointer;
+}
+
+button {
+  transition: transform 0.3s;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+}
